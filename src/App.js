@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   render() {
@@ -17,24 +17,38 @@ class App extends Component {
             Does everybody know that pig named Lorem Ipsum? 
             An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud.
           </div>
-          <div id="form">
-            <label for="title">Title:</label>
-            <input id="title"></input>
-            <label for="description">Description:</label>
-            <input id="description"></input>
-            <label for="image">Image URL:</label>
-            <input id="image"></input>
-            <button>Submit</button>
+          <div id="subMain">
+            <div id="form">
+              <label for="title">Title:</label>
+              <input id="title"></input>
+              <label for="description">Description:</label>
+              <input id="description"></input>
+              <label for="image">Image URL:</label>
+              <input id="image"></input>
+              <button>Submit</button>
+            </div>
+            <ul>
+              <li><img src="http://www.fillmurray.com/200/250"/></li>
+              <li><img src="http://www.fillmurray.com/300/250"/></li>
+              <li><img src="http://www.fillmurray.com/50/50"/></li>
+              <li><img src="http://www.fillmurray.com/200/100"/></li>
+              <li><img src="http://www.fillmurray.com/50/100"/></li>
+              <li><img src="http://www.fillmurray.com/100/100"/></li>
+              <li><img src="http://www.fillmurray.com/200/250"/></li>
+              <li><img src="http://www.fillmurray.com/300/250"/></li>
+              <li><img src="http://www.fillmurray.com/50/50"/></li>
+              <li><img src="http://www.fillmurray.com/200/100"/></li>
+              <li><img src="http://www.fillmurray.com/50/100"/></li>
+              <li><img src="http://www.fillmurray.com/100/100"/></li>
+              <li><img src="http://www.fillmurray.com/200/250"/></li>
+              <li><img src="http://www.fillmurray.com/300/250"/></li>
+              <li><img src="http://www.fillmurray.com/50/50"/></li>
+              <li><img src="http://www.fillmurray.com/200/100"/></li>
+              <li><img src="http://www.fillmurray.com/50/100"/></li>
+              <li><img src="http://www.fillmurray.com/100/100"/></li>
+            </ul>
           </div>
-          <ul>
-            <li><img src="http://www.fillmurray.com/200/250"/></li>
-            <li><img src="http://www.fillmurray.com/300/250"/></li>
-            <li><img src="http://www.fillmurray.com/50/50"/></li>
-            <li><img src="http://www.fillmurray.com/200/100"/></li>
-            <li><img src="http://www.fillmurray.com/50/100"/></li>
-            <li><img src="http://www.fillmurray.com/100/100"/></li>
-          </ul>
-          </main>
+        </main>
           <div id="footer">
             <p id="footerCopy">
               Blue bottle put a bird on it twee prism biodiesel brooklyn. Blue bottle ennui tbh succulents.
