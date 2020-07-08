@@ -35,7 +35,7 @@ class App extends Component {
             <li><img src="http://www.fillmurray.com/100/100"/></li>
           </ul>
           </main>
-          <div id="footer">
+          <footer id="footer">
             <p id="footerCopy">
               Blue bottle put a bird on it twee prism biodiesel brooklyn. Blue bottle ennui tbh succulents.
             </p>
@@ -44,7 +44,7 @@ class App extends Component {
               <p>@CassandraDanger</p>
               <p>www.cassandradanger.com</p>
             </div>
-          </div>
+          </footer>
       </div>
     );
   }
