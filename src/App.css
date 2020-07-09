@@ -1,0 +1,33 @@
+#form{
+    margin: 20px 0;
+}
+
+.MuiFormControl-root{
+    width: 100%;
+    margin: 20px;
+}
+
+#form .MuiFormControl-root{
+    margin: 10px;
+}
+
+li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+}
+
+li img{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+
+.card{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#form .MuiButton-containedPrimary{
+background-color: teal;
+}

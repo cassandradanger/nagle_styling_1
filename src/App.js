@@ -1,39 +1,63 @@
 import React, {Component} from 'react';
 import './App.css';
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
+import Card from '@material-ui/core/Card';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import Container from 'react-bootstrap/Container';
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
+// import Jumbotron from 'react-bootstrap/Jumbotron'
+// import Card from 'react-bootstrap/Card'
+
+import {Container, Row, Col, Jumbotron, Card as BSCard} from 'react-bootstrap';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header>
-          <h1>Casie's App!</h1>
+          <Jumbotron fluid>
+            <Container>
+            <h1>Casie's App!</h1>
+            </Container>
+          </Jumbotron>
         </header>
         <main>
-          <div id="intro">
+          <BSCard body id="intro">
             Lorem Ipsum is the single greatest threat. 
             We are not - we are not keeping up with other websites. 
             Lorem Ipsum best not make any more threats to your website. 
             It will be met with fire and fury like the world has never seen.
             Does everybody know that pig named Lorem Ipsum? 
             An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud.
-          </div>
-          <div id="form">
-            <label for="title">Title:</label>
-            <input id="title"></input>
-            <label for="description">Description:</label>
-            <input id="description"></input>
-            <label for="image">Image URL:</label>
-            <input id="image"></input>
-            <button>Submit</button>
-          </div>
-          <ul>
-            <li><img src="http://www.fillmurray.com/200/250"/></li>
-            <li><img src="http://www.fillmurray.com/300/250"/></li>
-            <li><img src="http://www.fillmurray.com/50/50"/></li>
-            <li><img src="http://www.fillmurray.com/200/100"/></li>
-            <li><img src="http://www.fillmurray.com/50/100"/></li>
-            <li><img src="http://www.fillmurray.com/100/100"/></li>
-          </ul>
+          </BSCard>
+          <Container>
+            <Row>
+              <Col lg={4}>
+                <div id="form">
+                  <TextField id="outlined-basic" label="Title" variant="outlined" />
+                  <br/>
+                  <TextField id="outlined-basic" label="Description" variant="outlined" />
+                  <br/>
+                  <TextField id="outlined-basic" label="Image URL" variant="outlined" />
+                  <br/>
+                  <Button variant="contained" color="primary">Submit</Button>
+                </div>
+              </Col>
+              <Col lg={8}>
+                <ul>
+                  <li><Card variant="outlined"><img src="http://www.fillmurray.com/200/250"/></Card></li>
+                  <li><Card variant="outlined"><img src="http://www.fillmurray.com/300/250"/></Card></li>
+                  <li><Card variant="outlined"><img src="http://www.fillmurray.com/50/50"/></Card></li>
+                  <li><Card variant="outlined"><img src="http://www.fillmurray.com/200/100"/></Card></li>
+                  <li><Card variant="outlined"><img src="http://www.fillmurray.com/50/100"/></Card></li>
+                  <li><Card variant="outlined"><img src="http://www.fillmurray.com/100/100"/></Card></li>
+                </ul>
+              </Col>
+            </Row>
+          </Container>
           </main>
           <footer id="footer">
             <p id="footerCopy">
